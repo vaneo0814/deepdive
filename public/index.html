@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/dQmKx4Hs/deepdive3.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f84283eaae.js" crossorigin="anonymous"></script>
@@ -13,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Deep Dive BJJ</title>
 </head>
@@ -22,22 +24,29 @@
     <!--start of nav bar-->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <img class="logoImg" src="https://i.postimg.cc/13Xsw26Y/deepdiveq22.png" width="85" alt="logo">
+            <img class="logoImg" src="https://i.postimg.cc/dQmKx4Hs/deepdive3.png" width="65" alt="logo">
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-
-                    <li class="nav-item">
+                    </li>
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Videos</a>
-
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-
+                        <a class="nav-link" href="#">
+                            Films
+                        </a>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="highlightBtn" href="highlights.html">Highlights</a></li>
+                            <br>
+                            <li><a class="breakdownBtn" href="breakdowns.html">Breakdowns</a></li>
+                        </ul> -->
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Merch</a>
-
-                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item" id="subscribeBtn">
                         <a class="nav-link" href="#">Subscribe</a>
                     </li>
                 </ul>
@@ -57,12 +66,6 @@
                             <a href="">
                                 <i class="fab fa-facebook-square fa-2x"></i>
                             </a>
-
-                        <li class="nav-item contactLogos">
-                            <a class="email" href="mailto:deepdivebjj@gmail.com">
-                                <i class="fas fa-envelope fa-2x"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -73,23 +76,80 @@
     <div class="container">
         <div class="row" id="home">
             <div class="col-lg-6" id="left-col">
-                <img class="imgContainer" src="https://i.postimg.cc/xTV9HwZ5/deepdive.png" alt="brandLogo" width="500">
-
+                <!-- <img class="imgContainer" src="https://i.postimg.cc/xTV9HwZ5/deepdive.png" alt="brandLogo" width="500"> -->
+                <iframe src="https://drive.google.com/file/d/1p67bFgyALqWAn5kDqiQaG-sJQCgpTbS8/preview" width="650" height="600"></iframe>
             </div>
             <div class="col-lg-6" id="right-col">
                 <header class="aboutHeader">
-                    DEEP <span class="diveSpan">DIVE</span><br>JIU JITSU
+                    DEEP <span class="diveSpan">DIVE</span><br><em>JIU <span class="diveSpan">JITSU</em></span>
                 </header>
                 <p class="aboutP">
                     A company that dedicates itself to the world of BJJ. We expertise in competition highlights,
-                    breakdown videos,<br>and so much more.. change dis blah blah blah
+                    breakdown videos,<br>and much more ..
                 </p>
                 <button class="button"><span>Enter here</span></button>
-
             </div>
         </div>
     </div>
 
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section contactSection">
+                <h1 class="contactHeader">
+                    Contact
+                </h1>
+                <a class="email" href="mailto:deepdivebjj@gmail.com">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer-section servicesSection">
+                <h1 class="servicesHeader">
+                    Services
+                </h1>
+                <ul>
+                    <li>
+                        Study competition videos/breakdown.
+                    </li>
+                    <li>
+                        Highlights of competition videos.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Deep Dive Jiu Jitsu
+        </div>
+
+        <!--popup window for subscribe form-->
+        <div id="popup" class="subscribeForm">
+            <!-- Modal content -->
+            <div class="subscribe-content">
+                <div class="subscribe-header">
+                    <span class="close">&times;</span>
+                    <i class="fas fa-envelope-open-text fa-6x"></i>
+                    <h2>SUBSCRIBE</h2>
+                    <section>Stay updated on our newest videos</section>
+                  </div>
+                  <div class="subscribe-body">
+                        <div class="input-group mb-3">
+                            <form action="/subscribe" method="POST">
+                            <input id="emailData" type="text" name="email" class="form-control" placeholder="Email">
+                            <button class="input-group-text" id="emailBtn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                          </div>
+                     
+                  </div>
+            </div>
+          
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
+    <script src="../server.js"></script>
 </body>
 
 </html>
