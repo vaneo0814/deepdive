@@ -2,29 +2,257 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://i.postimg.cc/dQmKx4Hs/deepdive3.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f84283eaae.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@600&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/dQmKx4Hs/deepdive3.png">
     <link rel="stylesheet" href="style.css">
-    <title>Deep Dive BJJ Films</title>
+    <title>Deep Dive BJJ/Films</title>
 </head>
 
 <body>
+    <!--start of mobile friendly-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img class="logoImg" src="https://i.postimg.cc/dQmKx4Hs/deepdive3.png" width="65" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="films.html">Films</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="merch.html">Merch</a>
+                </li>
+                <li class="nav-item" id="subscribeBtn">
+                    <a class="nav-link" href="#">Subscribe</a>
+                </li>
+            </ul>
+            <div class="d-flex contactLogos">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item contactLogos">
+                        <a class="youtube" href="https://www.youtube.com/channel/UCxDl45trKoGZrBi5qwDxPSw">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+
+                    <li class="nav-item contactLogos">
+                        <a class="ig" href="https://www.instagram.com/deepdivejiujitsu/?igshid=1g2ri62p11ys9">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+
+                    <li class="nav-item contactLogos">
+                        <a href="">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end of navbar-->
+
+
+    <div class="filmHeader">
+        <h1 class="brkdownhighlights">
+            <a class="nav-link" href="#breakdown">
+                Breakdown
+            </a>
+            &
+            <a class="nav-link" href="#highlights">
+                Highlights
+            </a>
+        </h1>
+    </div>
+
+    <!--inserting dummy videos to just see how it will layout-->
+    <div class="container" id="videoContainer">
+        <marquee behavior="slide" scrollamount="2" direction="down">
+            <h4 id="breakdown">Breakdown Videos</h4>
+        </marquee>
+        <div class="row">
+            <!--first column-->
+            <div class="col-md-4">
+                <img src="https://i.postimg.cc/FHSKx4Yf/Screen-Shot-2021-01-09-at-3-37-39-PM.png" width="350"
+                    class="img-fluid" alt="thumbnail1">
+                <i class="fas fa-play-circle fa-5x" id="playbtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"></i>
+                <h2 class="videoTitle">THIRD COAST GRAPPLING 3 - THE FUTURE (HIGHLIGHT VIDEO)</h2>
+                <p>Here is a new highlight video i put together on the most recent Third coast Grappling Event in
+                    Houston, Texas headlined by Gordon Ryan vs Bo Nickal and Romulo Barral vs Jake Shields. This event
+                    featured the highly anticipated match up between the current ADCC Absolute Champion against a 3x
+                    NCAA Wresting Champion.</p>
+
+            </div>
+            <!--second column-->
+            <div class="col-md-4">
+                <img src="https://i.postimg.cc/FHSKx4Yf/Screen-Shot-2021-01-09-at-3-37-39-PM.png" width="350"
+                    class="img-fluid" alt="thumbnail1">
+                <i class="fas fa-play-circle fa-5x" id="playbtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"></i>
+                    <h2 class="videoTitle">THIRD COAST GRAPPLING 3 - THE FUTURE (HIGHLIGHT VIDEO)</h2>
+                <p>Here is a new highlight video i put together on the most recent Third coast Grappling Event in
+                    Houston, Texas headlined by Gordon Ryan vs Bo Nickal and Romulo Barral vs Jake Shields. This event
+                    featured the highly anticipated match up between the current ADCC Absolute Champion against a 3x
+                    NCAA Wresting Champion.</p>
+
+            </div>
+            <!--3rd column-->
+            <div class="col-md-4">
+                <img src="https://i.postimg.cc/FHSKx4Yf/Screen-Shot-2021-01-09-at-3-37-39-PM.png" width="350"
+                    class="img-fluid" alt="thumbnail1">
+                <i class="fas fa-play-circle fa-5x" id="playbtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"></i>
+                    <h2 class="videoTitle">THIRD COAST GRAPPLING 3 - THE FUTURE (HIGHLIGHT VIDEO)</h2>
+                <p>Here is a new highlight video i put together on the most recent Third coast Grappling Event in
+                    Houston, Texas headlined by Gordon Ryan vs Bo Nickal and Romulo Barral vs Jake Shields. This event
+                    featured the highly anticipated match up between the current ADCC Absolute Champion against a 3x
+                    NCAA Wresting Champion.</p>
+            </div>
+            <!--beginning of highlight videos-->
+            <marquee behavior="slide" scrollamount="2" direction="down">
+                <h4 id="highlights">Highlight Videos</h4>
+            </marquee>
+            <div class="col-md-4">
+                <img src="https://i.postimg.cc/FHSKx4Yf/Screen-Shot-2021-01-09-at-3-37-39-PM.png" width="350"
+                    class="img-fluid" alt="thumbnail1">
+                <i class="fas fa-play-circle fa-5x" id="playbtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"></i>
+                <h2 class="videoTitle">THIRD COAST GRAPPLING 3 - THE FUTURE (HIGHLIGHT VIDEO)</h2>
+                <p>Here is a new highlight video i put together on the most recent Third coast Grappling Event in
+                    Houston, Texas headlined by Gordon Ryan vs Bo Nickal and Romulo Barral vs Jake Shields. This event
+                    featured the highly anticipated match up between the current ADCC Absolute Champion against a 3x
+                    NCAA Wresting Champion.</p>
+
+            </div>
+            <!--second column-->
+            <div class="col-md-4">
+                <img src="https://i.postimg.cc/FHSKx4Yf/Screen-Shot-2021-01-09-at-3-37-39-PM.png" width="350"
+                    class="img-fluid" alt="thumbnail1">
+                <i class="fas fa-play-circle fa-5x" id="playbtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"></i>
+                    <h2 class="videoTitle">THIRD COAST GRAPPLING 3 - THE FUTURE (HIGHLIGHT VIDEO)</h2>
+                <p>Here is a new highlight video i put together on the most recent Third coast Grappling Event in
+                    Houston, Texas headlined by Gordon Ryan vs Bo Nickal and Romulo Barral vs Jake Shields. This event
+                    featured the highly anticipated match up between the current ADCC Absolute Champion against a 3x
+                    NCAA Wresting Champion.</p>
+
+            </div>
+            <!--3rd column-->
+            <div class="col-md-4">
+                <img src="https://i.postimg.cc/FHSKx4Yf/Screen-Shot-2021-01-09-at-3-37-39-PM.png" width="350"
+                    class="img-fluid" alt="thumbnail1">
+                <i class="fas fa-play-circle fa-5x" id="playbtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"></i>
+                    <h2 class="videoTitle">THIRD COAST GRAPPLING 3 - THE FUTURE (HIGHLIGHT VIDEO)</h2>
+                <p>Here is a new highlight video i put together on the most recent Third coast Grappling Event in
+                    Houston, Texas headlined by Gordon Ryan vs Bo Nickal and Romulo Barral vs Jake Shields. This event
+                    featured the highly anticipated match up between the current ADCC Absolute Champion against a 3x
+                    NCAA Wresting Champion.</p>
+            </div>
+
+        </div>
+    </div>
+    <!--popup window for video 1-->
+    <!--popup window for video form-->
+    <div id="videopopup" class="videoForm">
+        <!-- Modal content -->
+        <div class="video-content">
+            <div class="video-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="video-body">
+                <iframe src="https://drive.google.com/file/d/1p67bFgyALqWAn5kDqiQaG-sJQCgpTbS8/preview" id="videoclip"
+                    width="750" height="450" alt="breakdown_video"></iframe>
+            </div>
+        </div>
+    </div>
+    <!--end of popup for video1-->
+
+
+    <!--popup window for subscribe form-->
+    <!--popup window for subscribe form-->
+        <div id="popup" class="subscribeForm">
+            <!-- Modal content -->
+            <div class="subscribe-content">
+                <div class="subscribe-header">
+                    <span class="close">&times;</span>
+                    <i class="fas fa-envelope-open-text fa-6x"></i>
+                    <h2>SUBSCRIBE</h2>
+                    <section>Stay updated on our newest videos</section>
+                  </div>
+                  <div class="subscribe-body">
+                        <div class="input-group mb-3">
+                            <form action="/subscribe" method="POST">
+                            <input id="emailData" type="text" name="email" class="form-control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            <button id="emailBtn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                          </div>
+                  </div>
+            </div>
+          
+          </div>
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section contactSection">
+                <h1 class="contactHeader">
+                    Contact
+                </h1>
+                <a class="email" href="mailto:deepdivebjj@gmail.com">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer-section servicesSection">
+                <h1 class="servicesHeader">
+                    Services
+                </h1>
+                <ul>
+                    <li>
+                        Study competition videos/breakdown.
+                    </li>
+                    <li>
+                        Highlights of competition videos.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Deep Dive Jiu Jitsu
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="index.js"></script>
+        <script src="films.js"></script>
+        <script src="../server.js"></script>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 
 </html>

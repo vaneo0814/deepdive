@@ -17,13 +17,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f84283eaae.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://i.postimg.cc/dQmKx4Hs/deepdive3.png">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Big+Shoulders+Stencil+Text:wght@600&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">    <link rel="icon" href="https://i.postimg.cc/dQmKx4Hs/deepdive3.png">
     <link rel="stylesheet" href="style.css">
-    <title>Deep Dive BJJ</title>
+    <title>Deep Dive BJJ/Merch</title>
 </head>
 
-<body class="homeBody">
+<body class="merchBody">
 <!--start of mobile friendly-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img class="logoImg" src="https://i.postimg.cc/dQmKx4Hs/deepdive3.png" width="65" alt="logo">
@@ -32,14 +31,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="films.html">Films</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="merch.html">Merch</a>
+              <a class="nav-link active" href="merch.html">Merch</a>
             </li>
             <li class="nav-item" id="subscribeBtn">
                 <a class="nav-link" href="#">Subscribe</a>
@@ -67,22 +66,15 @@
       </nav>
       <!--end of navbar-->
 
-    <div class="container">
-        <div class="row" id="home">
-            <div class="col-lg-6" id="left-col">
-                <header class="aboutHeader">
-                    DEEP <span class="diveSpan">DIVE</span><br><em>JIU <span class="diveSpan">JITSU</em></span>
-                </header>
-                <p class="aboutP">
-                    A company that dedicates itself to the world of BJJ. We expertise in competition highlights,
-                    breakdown videos, and offer services.
-                </p>
-                <button class="button"><span>Enter here</span></button>
-            </div>
-            <div class="col-lg-6" id="right-col">
-                <iframe src="https://drive.google.com/file/d/1p67bFgyALqWAn5kDqiQaG-sJQCgpTbS8/preview" width="650" height="600" alt="breakdown_video"></iframe>
-            </div>
-        </div>
+    <div class="merchContainer">
+        <h1 class="comingsoon">DEEP DIVE JIU JITSU TEES<br><span class="script">coming soon</span></h1>
+        <p class="merchcoming">Subscribe to stay notified on the launch of our<br>upcoming DeepDive BJJ T-Shirts!</p>
+        <form action="/subscribe" method="POST">
+            <input id="emailData" type="text" name="email" class="form-control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <button id="emailBtn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
     </div>
 
     <!--footer-->

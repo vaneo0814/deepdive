@@ -5,9 +5,14 @@
 /* mobile friendly homepage  */
 @media only screen and (max-width: 450px) {
    .homeBody {
-      background-image: url("https://i.postimg.cc/TPpn9LxT/Screen-Shot-2021-01-07-at-3-17-36-PM.png");
+   background-image: url("https://i.postimg.cc/TPpn9LxT/Screen-Shot-2021-01-07-at-3-17-36-PM.png");
    background-size: cover;
    }
+ }
+
+ .merchBody {
+    background-image: url("https://eskipaper.com/images/simple-background-patterns-1.jpg");
+    background-size: cover;
  }
 
  nav {
@@ -60,13 +65,13 @@ a {
    margin-left: 185px;
    margin-top: 20px;
    height: 1000px;
-   background-color: rgba(17, 28, 38, 0.899);
    padding: 100px;
    border-top-right-radius: 10px;
    border-bottom-right-radius: 10px;
+   background-color: black;
+
    }
  }
-
 
 .imgContainer {
    display: block;
@@ -256,7 +261,7 @@ ul{
  .subscribe-content {
    background-image: url("https://miro.medium.com/max/730/1*e0SqGOHfnUAUTTjVHDrDPQ.jpeg");
    background-size: cover;
-   margin: 15% auto; /* 15% from the top and centered */
+   margin: 5% auto; /* 15% from the top and centered */
    padding: 20px;
    width: 80%; /* Could be more or less, depending on screen size */
    height: 500px;
@@ -320,4 +325,119 @@ ul{
 #emailData {
    width: 350px;
    display: inline-block;
+}
+
+/* FILMS.HTML CSS STARTS HERE*/
+
+.filmHeader {
+   background-color: pink;
+   display: block;
+   height: 250px;
+   padding: 10px;
+   margin-top: -20px;
+   background-image: url("https://ded7t1cra1lh5.cloudfront.net/site_banners/28644/original/CustomBanner3.jpg?1469640538");
+   margin-bottom: 10px;
+}
+
+.brkdownhighlights {
+   font-family: 'IBM Plex Sans', sans-serif;
+   text-align: center;
+   color: white;
+   margin-top: 20px;
+}
+
+#playbtn {
+   position: absolute;
+   /* top: -50%;
+   left: 45%; */
+   bottom: 78%;
+   right: 39%;
+   cursor: pointer;
+   transition: 0.3s;
+   color: rgb(148, 6, 6);
+   opacity: 0;
+}
+
+.col-md-4{
+   margin-top: 10px;
+}
+.col-md-4:hover #playbtn{
+   opacity: 1;
+}
+
+#breakdown, #highlights{
+   font-family: 'Big Shoulders Stencil Text', cursive;
+   font-size: 40px;
+   text-align: center;
+}
+
+/* POP UP WINDOW/SUBSCRIBE */
+/* The Modal (background) */
+.videoForm {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content/Box */
+ .video-content {
+   margin: 5% auto; /* 15% from the top and centered */
+   padding: 20px;
+   width: 100%; /* Could be more or less, depending on screen size */
+ }
+ 
+ /* The Close Button */
+ .close {
+   color: rgb(254, 75, 75);
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ #videoclip{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+/* merch page styling */
+.merchContainer {
+   display: block;
+   height: 500px;
+   text-align: center;
+   padding-top: 50px;
+}
+
+.comingsoon{
+   font-size: 70px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bolder;
+   color: white;
+}
+
+.merchcoming {
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+   margin-bottom: 25px;
+   color: white;
+}
+
+.script {
+   font-family: 'Allura', cursive;
+   font-size: 90px;
+
 }
