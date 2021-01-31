@@ -20,8 +20,8 @@
  .homeContainer {
     /* background-color: pink; */
     margin-bottom: 100px;
-    margin-left: 30px;
-    margin-right: 20px;
+    /* margin-left: 30px; */
+    /* margin-right: 20px; */
  }
 
  @media only screen and (max-width: 1200px) {
@@ -34,30 +34,36 @@
    .homeContainer {
    width: 700px;
    height: 900px;
-   margin-left: 30px;
    margin-top: 50px;
-   background-color: rgb(27, 27, 40);
-   opacity: 0.9;
+   margin-left: 10px;
    }
 }
 
 .leftColumn {
-   background-color: rgb(27, 27, 40);
+   background-color: rgb(12, 12, 40);
    opacity: 0.9;
    margin-right: -18px;
+   margin-left: 30px;
+}
+
+
+.rightColumn {
+   margin-right: 20px;
 }
   
-
-/* IS THIS SHIT WORKING?! */
- /* .container{
-   position: relative;
-   min-height: 100vh;
-   padding-bottom: 200px;
- } */
-
  .merchBody {
     background-image: url("https://eskipaper.com/images/simple-background-patterns-1.jpg");
     background-size: cover;
+ }
+
+ @media only screen and (max-width: 450px) {
+   .merchBody {
+      background-image: url("https://wallpaperaccess.com/full/1116897.jpg");
+background-size: cover;
+
+      
+
+   }
  }
 
  nav {
@@ -81,8 +87,8 @@ a {
 
 .nav-link:hover{
    background-color: rgb(203, 199, 199);
-   color: black;
 }
+
 
 .imgContainer {
    display: block;
@@ -91,7 +97,7 @@ a {
    margin-top: 40px;
 }
 
-.aboutHeader {
+#aboutHeader {
    color: white;
    font-family: 'IBM Plex Sans', sans-serif;
    font-size: 70px;
@@ -99,7 +105,7 @@ a {
 }
 
  @media only screen and (max-width: 1200px) {
-   .aboutHeader {
+   #aboutHeader {
    font-size: 120px;
    }
 }
@@ -126,6 +132,17 @@ a {
    }
  }
 
+
+
+
+
+
+
+
+
+
+
+
  /* button effect  */
  .button {
    border-radius: 4px;
@@ -143,6 +160,17 @@ a {
    margin-left: auto;
    margin-right: auto;
    font-family: 'Montserrat', sans-serif;
+ }
+
+ @media only screen and (max-width: 450px) {
+   .button {
+   width: 300px;
+   height: 100px;
+   font-size: 25px;
+   border-color: white;
+   border: solid;
+
+   }
  }
  
  .button span {
@@ -172,7 +200,7 @@ a {
 
  .button:hover {
    background-color: white;
-   color: black;
+   color: rgb(62, 1, 1);
  }
 
 
@@ -180,36 +208,23 @@ a {
    color: black;
 }
 
-.footerContainer {
-   background-color: pink;
+/* .footerContainer {
+   background-color: rgb(60, 60, 66);
 }
 
+@media only screen and (max-width: 450px) {
+   .footerContainer{
+      width: 770px;
+   }
+ }
 
-/* ** FOOTER ** */
-/* .footerContainer{
-   position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   right:0;
-   background-image: url("https://www.xmple.com/wallpaper/gradient-linear-red-black-1920x1080-c2-8b0000-000000-a-30-f-14.svg");
-   background-size: cover;
-} */
-
-/* footer {
-   background-color: rgb(38, 1, 1);
-   position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   right:0;
-   left:0;
-   text-align: center;
-}
-
-.contactUs {
-   margin-left: 30px;
-}
+ @media only screen and (max-width: 450px) {
+   .contactHeader{
+      text-align: center;
+      color: red;
+   }
+ }
+ 
 
 .contactHeader {
    font-family: 'IBM Plex Sans', sans-serif;
@@ -220,11 +235,6 @@ a {
    margin-left: 20px;
 }
 
-.followUs {
-   display: flex;
-   flex-direction: row;
-}
-
 ul {
    font-family: 'IBM Plex Sans', sans-serif;
    font-size: 15px;
@@ -232,15 +242,9 @@ ul {
    text-align: left;
 }
 
-.copyrightFooter, .designBy {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 15px;
-   color: white;
+.contactUs {
+   margin-left: 30px;
 } */
-
-
-/* end of footer  */
-
 
 
 /* POP UP WINDOW/SUBSCRIBE */
@@ -331,7 +335,6 @@ ul {
 /* FILMS.HTML CSS STARTS HERE*/
 
 .filmHeader {
-   background-color: pink;
    display: block;
    height: 250px;
    padding: 10px;
@@ -339,6 +342,12 @@ ul {
    background-image: url("https://ded7t1cra1lh5.cloudfront.net/site_banners/28644/original/CustomBanner3.jpg?1469640538");
    margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 450px) {
+   .filmHeader {
+      width: 770px;
+   }
+ }
 
 .brkdownhighlights {
    font-family: 'IBM Plex Sans', sans-serif;
@@ -362,6 +371,16 @@ ul {
 .col-md-4{
    margin-top: 10px;
 }
+
+@media only screen and (max-width: 450px) {
+   .col-md-4 {
+      background-color: red;
+      display: block;
+      position: relative;
+      width: 800px;
+   }
+ }
+
 .col-md-4:hover #playbtn{
    opacity: 1;
 }
@@ -392,6 +411,11 @@ ul {
    margin: 5% auto; /* 15% from the top and centered */
    padding: 20px;
    width: 100%; /* Could be more or less, depending on screen size */
+ }
+ 
+ .videoRow {
+    background-color: purple;
+    width: 770px;
  }
  
  /* The Close Button */
