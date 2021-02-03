@@ -1,6 +1,7 @@
 .homeBody{
    background-image: url("https://heal-deliberately.com/wp-content/uploads/2017/03/Jiu-jitsu-wallpaper-3888x2592-237454-WallpaperUP.jpg");
    background-size: cover;
+   position: absolute;
 }
 /* mobile friendly homepage  */
 @media only screen and (max-width: 450px) {
@@ -32,7 +33,7 @@
    width: 700px;
    height: 900px;
    margin-top: 50px;
-   margin-left: 10px;
+   margin-left: 30px;
    }
 }
 
@@ -66,7 +67,7 @@
 
  @media only screen and (max-width: 450px) {
    nav {
-      width: 770px;
+      width: 800px;
    }
  }
 
@@ -479,11 +480,45 @@ a {
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:white;
 }
+
+@media only screen and (max-width: 450px) {
+  .site-footer{
+    position: absolute;
+  }
+}
+.text-justify, #servicesli{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.services{
+  margin-bottom: 10px;
+}
+
+.quicklinks{
+  margin-bottom: 10px;
+
+}
+
+@media only screen and (max-width: 450px) {
+  .services{
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .text-justify{
+    font-size: 20px;
+    line-height: 35px;
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+}
+
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:white;
   opacity:0.5
 }
 .site-footer hr.small
@@ -500,7 +535,7 @@ a {
 }
 .site-footer a
 {
-  color:#737373;
+  color:white;
 }
 .site-footer a:hover
 {
@@ -516,9 +551,10 @@ a {
 {
   display:block
 }
+
 .footer-links a
 {
-  color:#737373
+  color: white;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -545,8 +581,16 @@ a {
 }
 .copyright-text
 {
-  margin:0
+  margin:0;
+  color: #68696f;
 }
+
+@media only screen and (max-width: 450px) {
+  .copyright-text{
+    font-size: 10px;
+  }
+}
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
@@ -569,7 +613,7 @@ a {
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
 }
 .social-icons li
 {
@@ -586,7 +630,7 @@ a {
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  color:white;
   font-size:16px;
   display:inline-block;
   line-height:44px;
