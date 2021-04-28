@@ -1,6 +1,6 @@
 # Deep Dive Jiu Jitsu
 
-A martial arts website named "Deep Dive Jiu Jitsu" that shows breakdown/highlight videos of matches/competitions where fans can subsribe to be emailed for any new video uploads. As well as selling merchandise which will be coming soon. Deep Dive Jiu Jitsu is created using Vanilla JS, HTML, CSS, Express and Mailchimp API. 
+A martial arts website named "Deep Dive Jiu Jitsu" that shows breakdown/highlight videos of matches/competitions where fans can subscribe to be emailed for any new video uploads. As well as selling merchandise which will be coming soon. Deep Dive Jiu Jitsu is created using Vanilla JS, HTML, CSS, Express and Mailchimp API. 
 The website is still in progress.
 
 ![Screen Shot 2021-04-28 at 9 28 10 AM](https://user-images.githubusercontent.com/67250231/116412299-8a62d300-a804-11eb-890a-4e7b5be803d4.png)
